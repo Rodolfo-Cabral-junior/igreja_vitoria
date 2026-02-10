@@ -24,7 +24,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth.admin')->group(function
     Route::get('/complete', function () {
         return view('admin.dashboard-complete');
     })->name('dashboard.complete');
-    
+
     // User CRUD routes
     Route::prefix('users')->name('users.')->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('index');
@@ -36,3 +36,4 @@ Route::prefix('admin')->name('admin.')->middleware('auth.admin')->group(function
         Route::delete('/{user}', [DashboardController::class, 'destroy'])->name('destroy');
     });
 });
+//teste
