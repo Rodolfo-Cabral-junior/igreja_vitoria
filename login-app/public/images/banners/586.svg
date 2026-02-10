@@ -1,0 +1,147 @@
+<svg width="3800" height="2000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#7e8ba3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8c6db;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5b4;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ffeb3b;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:0.4" />
+    </linearGradient>
+    <radialGradient id="sunGrad">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#fff5b4;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffeb3b;stop-opacity:0.7" />
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="3800" height="2000" fill="url(#skyGrad)"/>
+  
+  <!-- Divine light rays -->
+  <g opacity="0.4">
+    <polygon points="1900,100 1200,2000 2600,2000" fill="url(#lightGrad)"/>
+    <polygon points="1900,200 1400,2000 2400,2000" fill="url(#lightGrad)"/>
+    <polygon points="1900,300 1600,2000 2200,2000" fill="url(#lightGrad)"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="1900" cy="300" r="150" fill="url(#sunGrad)" filter="url(#blur)"/>
+  
+  <!-- Clouds with divine glow -->
+  <g opacity="0.7">
+    <ellipse cx="800" cy="400" rx="200" ry="80" fill="white" filter="url(#blur)"/>
+    <ellipse cx="900" cy="380" rx="150" ry="70" fill="white" filter="url(#blur)"/>
+    <ellipse cx="700" cy="380" rx="120" ry="60" fill="white" filter="url(#blur)"/>
+    
+    <ellipse cx="3000" cy="500" rx="180" ry="70" fill="white" filter="url(#blur)"/>
+    <ellipse cx="3100" cy="480" rx="140" ry="60" fill="white" filter="url(#blur)"/>
+  </g>
+  
+  <!-- Mountains silhouette -->
+  <polygon points="0,1200 600,600 1200,900 1800,700 2400,850 3000,650 3800,950 3800,2000 0,2000" 
+           fill="#2c3e50" opacity="0.6"/>
+  
+  <!-- Main church building -->
+  <g transform="translate(1400, 1000)">
+    <!-- Base building -->
+    <rect x="0" y="300" width="600" height="700" fill="#8b7355" stroke="#654321" stroke-width="4"/>
+    
+    <!-- Main roof -->
+    <polygon points="-50,300 300,50 650,300" fill="#8b0000" stroke="#654321" stroke-width="4"/>
+    
+    <!-- Central tower -->
+    <rect x="250" y="150" width="100" height="200" fill="#8b7355" stroke="#654321" stroke-width="4"/>
+    <polygon points="220,150 300,20 380,150" fill="#8b0000" stroke="#654321" stroke-width="4"/>
+    
+    <!-- Cross on tower -->
+    <rect x="290" y="10" width="20" height="60" fill="#ffd700"/>
+    <rect x="270" y="30" width="60" height="15" fill="#ffd700"/>
+    
+    <!-- Side towers -->
+    <rect x="50" y="200" width="80" height="400" fill="#8b7355" stroke="#654321" stroke-width="3"/>
+    <polygon points="30,200 90,100 150,200" fill="#8b0000" stroke="#654321" stroke-width="3"/>
+    
+    <rect x="470" y="200" width="80" height="400" fill="#8b7355" stroke="#654321" stroke-width="3"/>
+    <polygon points="450,200 510,100 570,200" fill="#8b0000" stroke="#654321" stroke-width="3"/>
+    
+    <!-- Crosses on side towers -->
+    <rect x="85" y="90" width="10" height="40" fill="#ffd700"/>
+    <rect x="75" y="100" width="30" height="8" fill="#ffd700"/>
+    
+    <rect x="505" y="90" width="10" height="40" fill="#ffd700"/>
+    <rect x="495" y="100" width="30" height="8" fill="#ffd700"/>
+    
+    <!-- Large central window -->
+    <ellipse cx="300" cy="400" rx="80" ry="120" fill="#87ceeb" stroke="#654321" stroke-width="6"/>
+    <ellipse cx="300" cy="400" rx="60" ry="100" fill="#b0e0e6"/>
+    
+    <!-- Side windows -->
+    <rect x="100" y="350" width="60" height="100" fill="#87ceeb" stroke="#654321" stroke-width="4"/>
+    <rect x="440" y="350" width="60" height="100" fill="#87ceeb" stroke="#654321" stroke-width="4"/>
+    
+    <!-- Tower windows -->
+    <rect x="270" y="180" width="60" height="80" fill="#87ceeb" stroke="#654321" stroke-width="4"/>
+    <rect x="60" y="230" width="40" height="60" fill="#87ceeb" stroke="#654321" stroke-width="3"/>
+    <rect x="500" y="230" width="40" height="60" fill="#87ceeb" stroke="#654321" stroke-width="3"/>
+    
+    <!-- Main entrance -->
+    <rect x="220" y="750" width="160" height="250" fill="#654321" stroke="#4a3020" stroke-width="4"/>
+    <rect x="240" y="770" width="120" height="230" fill="#8b4513"/>
+    
+    <!-- Door details -->
+    <circle cx="340" cy="880" r="5" fill="#ffd700"/>
+    <rect x="300" y="770" width="4" height="230" fill="#654321"/>
+    
+    <!-- Side doors -->
+    <rect x="70" y="850" width="80" height="150" fill="#654321" stroke="#4a3020" stroke-width="3"/>
+    <rect x="450" y="850" width="80" height="150" fill="#654321" stroke="#4a3020" stroke-width="3"/>
+  </g>
+  
+  <!-- Foreground trees -->
+  <g opacity="0.8">
+    <g transform="translate(500, 1400)">
+      <rect x="-30" y="100" width="60" height="150" fill="#8b4513"/>
+      <circle cx="0" cy="50" r="80" fill="#228b22"/>
+      <circle cx="-40" cy="70" r="60" fill="#228b22"/>
+      <circle cx="40" cy="70" r="60" fill="#228b22"/>
+    </g>
+    
+    <g transform="translate(3200, 1450)">
+      <rect x="-40" y="120" width="80" height="180" fill="#8b4513"/>
+      <circle cx="0" cy="60" r="100" fill="#228b22"/>
+      <circle cx="-50" cy="80" r="70" fill="#228b22"/>
+      <circle cx="50" cy="80" r="70" fill="#228b22"/>
+    </g>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="1700" width="3800" height="300" fill="#228b22" opacity="0.9"/>
+  
+  <!-- Path to church -->
+  <polygon points="1700,2000 1900,1700 2100,2000" fill="#d2b48c" opacity="0.7"/>
+  
+  <!-- Additional divine elements -->
+  <g opacity="0.3">
+    <circle cx="1000" cy="300" r="3" fill="white"/>
+    <circle cx="1200" cy="400" r="2" fill="white"/>
+    <circle cx="2800" cy="350" r="3" fill="white"/>
+    <circle cx="3000" cy="450" r="2" fill="white"/>
+    <circle cx="1500" cy="500" r="2" fill="white"/>
+    <circle cx="2500" cy="550" r="3" fill="white"/>
+  </g>
+  
+  <!-- Additional light rays -->
+  <g opacity="0.2">
+    <line x1="1900" y1="300" x2="1000" y2="1500" stroke="#fff5b4" stroke-width="8"/>
+    <line x1="1900" y1="300" x2="2800" y2="1500" stroke="#fff5b4" stroke-width="8"/>
+    <line x1="1900" y1="300" x2="1300" y2="1800" stroke="#fff5b4" stroke-width="6"/>
+    <line x1="1900" y1="300" x2="2500" y2="1800" stroke="#fff5b4" stroke-width="6"/>
+  </g>
+</svg>

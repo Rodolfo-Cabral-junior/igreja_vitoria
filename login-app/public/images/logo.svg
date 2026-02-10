@@ -1,0 +1,20 @@
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cross symbol -->
+  <path d="M25 10 L25 40 L35 40 L35 10 Z" fill="url(#logoGradient)"/>
+  <path d="M15 20 L45 20 L45 30 L15 30 Z" fill="url(#logoGradient)"/>
+  
+  <!-- Church text -->
+  <text x="55" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+    IGREJA
+  </text>
+  <text x="55" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#667eea">
+    VITÓRIA
+  </text>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="300" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="35" fill="white" filter="url(#shadow)"/>
+  
+  <!-- Cross symbol -->
+  <path d="M30 25 L30 55 L50 55 L50 25 Z" fill="url(#crossGradient)" rx="2"/>
+  <path d="M20 35 L60 35 L60 45 L20 45 Z" fill="url(#crossGradient)" rx="2"/>
+  
+  <!-- Church text -->
+  <text x="90" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#2d3748">
+    IGREJA
+  </text>
+  <text x="90" y="55" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#667eea">
+    VITÓRIA
+  </text>
+  
+  <!-- Small cross decoration -->
+  <circle cx="270" cy="40" r="15" fill="url(#crossGradient)" opacity="0.8"/>
+  <path d="M265 35 L265 45 L275 45 L275 35 Z" fill="white"/>
+  <path d="M260 40 L280 40 L280 40 L280 40 Z" fill="white"/>
+</svg>
